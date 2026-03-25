@@ -1,8 +1,6 @@
 const express = require("express");
-const dotenv = require("dotenv");
 const nodemailer = require("nodemailer");
 
-dotenv.config();
 console.log("DEBUG ENV KEYS:", Object.keys(process.env).filter(k => k.includes("PHONE")));
 const app = express();
 app.use(express.json());
